@@ -1,13 +1,17 @@
 <script>
 	let logo = '../../public/images/logo.webp';
 
-	import MediaQuery from "./MediaQuery.svelte";
+	import MediaQuery from "../utils/MediaQuery.svelte";
+	import Burger from "./Burger_Button.svelte";
 </script>
 
 <style>
 
 	header{
-		width: 100vw;
+		margin: 2rem 0;
+		height: 53px;
+		box-sizing: border-box;
+		width: 100%;
 		position: absolute;
 		z-index: 1;
 	}
@@ -24,6 +28,7 @@
 	}
 
 	.desktop {
+		padding: 0px 32px;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -32,6 +37,16 @@
 		margin: 0px;
 		padding: 0px;
 		display: flex;
+	}
+
+	.tablet ul {
+		width: 100vw;
+		justify-content: space-evenly;
+	}
+
+	.desktop ul {
+		width: calc(50vw - 32px);
+		justify-content: space-evenly;
 	}
 
 	li {
@@ -43,6 +58,8 @@
 		height: 53px;
 		display: inline-block;
 	}
+
+
 
 </style>
 
@@ -85,15 +102,7 @@
 	{#if matches}
 		<header class="header mobile">
 			<img src={logo} alt="logo">
-			<!-- <nav>
-				<ul>
-					<li><p>Abaut me</p></li>
-					<li><p>Certification</p></li>
-					<li><p>Skills</p></li>
-					<li><p>Certification</p></li>
-					<li><p>Contact</p></li>
-				</ul>
-			</nav> -->
+			<Burger class="Menu"/>
 		</header>
 	{/if}
 </MediaQuery>
