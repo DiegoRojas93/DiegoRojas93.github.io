@@ -128,5 +128,6 @@
 
 	p {
 		margin: 0;
+		font-size: 2rem;
 	}
 </style>

@@ -1,5 +1,6 @@
 <script>
-	let logo = '../../public/images/logo.webp';
+	let logoMobile = '../../public/images/Logo.webp';
+	let logoDesk = '../../public/images/LogoDesk.webp';
 
 	import MediaQuery from "../utils/MediaQuery.svelte";
 	import Burger from "./Burger_Button.svelte";
@@ -9,7 +10,7 @@
 
 	header{
 		margin: 2rem 0;
-		height: 53px;
+		height: auto;
 		box-sizing: border-box;
 		width: 100%;
 		position: absolute;
@@ -53,13 +54,15 @@
 		list-style: none;
 	}
 
-	img {
-		width: 118px;
-		height: 53px;
+	.header img {
+		width: auto;
+		height: auto;
 		display: inline-block;
 	}
 
-
+	p {
+		font-size: 1.6rem;
+	}
 
 </style>
 
@@ -67,7 +70,7 @@
 <MediaQuery query="(min-width: 1152px)" let:matches>
 	{#if matches}
 		<header class="header desktop">
-			<img src={logo} alt="logo">
+			<img src={logoDesk} alt="logo">
 			<nav>
 				<ul>
 					<li><p>Abaut me</p></li>
@@ -84,7 +87,7 @@
 <MediaQuery query="(min-width: 768px) and (max-width: 1151px)" let:matches>
 	{#if matches}
 		<header class="header tablet">
-			<img src={logo} alt="logo">
+			<img src={logoMobile} alt="logo">
 			<nav>
 				<ul>
 					<li><p>Abaut me</p></li>
@@ -101,7 +104,7 @@
 <MediaQuery query="(max-width: 767px)" let:matches>
 	{#if matches}
 		<header class="header mobile">
-			<img src={logo} alt="logo">
+			<img src={logoMobile} alt="logo">
 			<Burger class="Menu"/>
 		</header>
 	{/if}

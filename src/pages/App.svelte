@@ -1,5 +1,6 @@
 <script>
 	import Header from './components/Header.svelte';
+	import Portada from './components/Portada.svelte';
 </script>
 
 <style>
@@ -12,19 +13,9 @@
 		box-sizing: border-box;
 	}
 
-	/* html {
+	:global(html){
 		font-size: 62.5%;
 	}
-
-	ul{
-		margin: 0px;
-		padding: 0px;
-		display: flex;
-	}
-
-	li {
-		list-style: none
-	} */
 
 	:global(body) {
 		width: 100vw;
@@ -32,7 +23,6 @@
 		margin: 0;
 		padding: 0;
 		background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=#f1f1f1ff&noise=cdcdcd&density=100&opacity=75);
-		background-color: #f2eee2;
 		color: #008890;
 		transition: background-color 0.3s;
 		box-sizing: border-box;
@@ -53,15 +43,10 @@
 		height: 100vh;
 	}
 
-	.container{
-		height: 100Vh;
-		width: 50Vw;
-		background: radial-gradient(50% 50% at 50% 50%, rgba(32, 25, 102, 0.75) 0%, #141040 100%);
-	}
-
 </style>
 
 <main>
+
 	<Header/>
-	<div class="container"></div>
+	<Portada />
 </main>
