@@ -26,6 +26,7 @@
 		color: #008890;
 		transition: background-color 0.3s;
 		box-sizing: border-box;
+		/* font-size: 62.5%; */
 	}
 	:global(body.dark-mode) {
 		margin: 0;
@@ -36,12 +37,19 @@
 		box-sizing: border-box;
 	}
 
-	main{
+	/* main{
 		margin: 0;
 		padding: 0;
 		width: 100vw;
 		height: 100vh;
 	}
+
+	.portada{
+		height: 100vh;
+		width: 50Vw;
+		background: radial-gradient(50% 50% at 50% 50%, rgba(32, 25, 102, 0.75) 0%, #141040 100%);
+		position: relative;
+	} */
 
 </style>
 
@@ -49,4 +57,5 @@
 
 	<Header/>
 	<Portada />
+	<!-- <div class="portada"></div> -->
 </main>

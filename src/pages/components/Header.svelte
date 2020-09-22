@@ -62,6 +62,7 @@
 
 	p {
 		font-size: 1.6rem;
+		font-family: 'Orbitron', sans-serif;
 	}
 
 </style>
