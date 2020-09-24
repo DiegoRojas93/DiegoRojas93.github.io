@@ -13,8 +13,10 @@
 		height: auto;
 		box-sizing: border-box;
 		width: 100%;
+		max-width: 100vw;
 		position: absolute;
 		z-index: 1;
+		top:0;
 	}
 
 	.mobile {
@@ -60,7 +62,7 @@
 		display: inline-block;
 	}
 
-	p {
+	a {
 		font-size: 1.6rem;
 		font-family: 'Orbitron', sans-serif;
 	}
@@ -74,11 +76,11 @@
 			<img src={logoDesk} alt="logo">
 			<nav>
 				<ul>
-					<li><p>Abaut me</p></li>
-					<li><p>Certification</p></li>
-					<li><p>Skills</p></li>
-					<li><p>Certification</p></li>
-					<li><p>Contact</p></li>
+					<li><a href="/">Abaut me</a></li>
+					<li><a href="/">Certification</a></li>
+					<li><a href="/">Skills</a></li>
+					<li><a href="/">Certification</a></li>
+					<li><a href="/">Contact</a></li>
 				</ul>
 			</nav>
 		</header>

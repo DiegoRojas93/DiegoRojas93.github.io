@@ -15,7 +15,7 @@
 	section{
 		box-sizing: border-box;
 		height: 100vh;
-		width: 100vw;
+		max-width: 100vw;
 		display: flex;
 	}
 
@@ -24,6 +24,7 @@
 		width: 50Vw;
 		background: radial-gradient(50% 50% at 50% 50%, rgba(32, 25, 102, 0.75) 0%, #141040 100%);
 		position: relative;
+		overflow: hidden;
 	}
 
 	.portfolio{
@@ -44,7 +45,7 @@
 	}
 
 	img {
-		object-fit: contain;
+		object-fit: scale-down;
 		width: 100%;
 		height: 100%;
 	}
@@ -65,19 +66,15 @@
 		display: grid;
 		grid-template: repeat(4, 1fr) / repeat(4, 1fr);
 		gap: 1rem;
+		overflow: hidden;
 	}
-
 
 	.item {
 		box-sizing: border-box;
 		border: 1px dashed red;
 	}
 
-	.mouse img, .pen img{
-		object-fit: scale-down;
-	}
-
-	.macbook {
+	.mac {
 		grid-column: 1 / 3;
 		grid-row: 1 / 3;
 	}
@@ -109,7 +106,7 @@
 	<MediaQuery query="(min-width: 1152px)" let:matches>
 		{#if matches}
 			<div class="container">
-				<div class="item macbook">
+				<div class="item mac">
 					<img src={macbook} alt="macbook">
 				</div>
 				<div class="item keyboard">
