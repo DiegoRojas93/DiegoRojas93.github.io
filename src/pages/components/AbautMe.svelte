@@ -39,7 +39,6 @@
 		text-align: center;
 	}
 
-
 	img {
 		height: 100%;
 		width: auto;
@@ -91,7 +90,7 @@
 		</div>
 	</article>
 	<article class="container">
-		<div>
+		<div class="video">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/YZ7Ml5wc52I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div class="mobile">
