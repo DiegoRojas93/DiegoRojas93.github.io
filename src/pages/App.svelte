@@ -1,8 +1,8 @@
 <script>
 	import Header from './components/Header.svelte';
 	import Portada from './components/Portada.svelte';
-	// import AbautMe from './components/AbautMe.svelte';
 	import AbautMe from './components/AboutMe2.svelte';
+	import Certification from './components/Certification.svelte';
 </script>
 
 <style>
@@ -51,4 +51,5 @@
 <Header/>
 <Portada />
 <AbautMe/>
+<Certification/>
 
