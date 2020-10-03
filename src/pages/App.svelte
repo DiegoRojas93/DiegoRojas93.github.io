@@ -3,6 +3,7 @@
 	import Portada from './components/Portada.svelte';
 	import AbautMe from './components/AboutMe2.svelte';
 	import Certification from './components/Certification.svelte';
+	import Video from './components/Video.svelte';
 </script>
 
 <style>
@@ -52,4 +53,4 @@
 <Portada />
 <AbautMe/>
 <Certification/>
-
+<Video/>

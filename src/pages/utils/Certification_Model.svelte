@@ -25,8 +25,10 @@
 		data = info[random];
 		alt = data.name;
 		src = data.image;
-		href = comprovationLink(data.link)
-		marco = data.marco
+		href = comprovationLink(data.link);
+		marco = data.marco;
+
+		console.log(alt)
 
 	}, 3000);
 
@@ -66,7 +68,7 @@
 <section>
 	<figure transition:fade>
 		<a {href} target="_blank" class:marco="{marco === true}">
-			<img {src} {alt} on:load={recarga()} transition:fade="{confirmation.toggle}" title={alt}/>
+			<img {src} {alt} on:load={recarga()}  title={alt}/>
 		</a>
 	</figure>
 </section>
