@@ -2,7 +2,11 @@
 	let title ='</Portfolio>';
 
 	let IMAGES = [
-		{id: 1},
+		{	id: 1,
+			mac: '../../public/images/Portfolio/Mac.webp',
+			macbook: '../../public/images/Portfolio/macbook.webp',
+			smartphone: '../../public/images/Portfolio/smartphone.webp'
+		},
 		{id: 2},
 		{id: 3},
 		{id: 4},
@@ -52,6 +56,7 @@
 		transform: rotate(90deg);
 		overflow: hidden;
 		visibility: hidden;
+		transition: 0.5s ease-in-out;
 	}
 
 	.hexagon-inside{
@@ -60,6 +65,7 @@
 		background: green;
 		transform: rotate(-60deg);
 		overflow: hidden;
+		transition: 0.5s ease-in-out;
 	}
 
 	.card{
@@ -67,8 +73,25 @@
 		height: 100%;
 		transform: rotate(-60deg);
 		visibility: visible;
+		overflow: hidden;
 		background-color: #0E0A39;
 		position: relative;
+		transition: 0.5s ease-in-out;
+	}
+
+	.hexagon:hover{
+		width: 100%;
+		height: 100%;
+		transform: rotate(0deg);
+	}
+
+	.hexagon-inside:hover{
+		transform: rotate(0deg);
+	}
+
+	.card:hover{
+		transform: rotate(0deg);
+		border-radius: 2rem;
 	}
 
 	.card:before{
@@ -83,9 +106,38 @@
 		transition: 0.5s ease-in-out;
 	}
 
-	.card:hover:before{
-		clip-path: circle(100% at 50% 50%);
+	.card:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 70%;
+		bottom: 0%;
+		width: 100%;
+		height: 100%;
+		background-color: #0E0A39;
+		transform: translate(0,500px);
+		transition: 0.5s ease-in-out;
 	}
+	.card:hover:after{
+		content: '';
+		transform: translate(0, 0)
+	}
+
+
+	.card:hover:before{
+		clip-path: circle(100%);
+	}
+
+	.figure{
+		position: absolute;
+		z-index: 3;
+		height: 16px;
+		width: 32px;
+		/* transform: rotate(30deg) */
+	}
+
+
 
 	@media screen and (min-width: 768px){
 		section{
@@ -120,7 +172,11 @@
 			<article class="item">
 				<div class="hexagon">
 					<div class="hexagon-inside">
-						<div class="card"></div>
+						<div class="card">
+							<figure class="mac">
+								<img src={image.mac}/>
+							</figure>
+						</div>
 					</div>
 				</div>
 			</article>
