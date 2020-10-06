@@ -4,6 +4,7 @@
 	import AbautMe from './components/AboutMe2.svelte';
 	import Certification from './components/Certification.svelte';
 	import Video from './components/Video.svelte';
+	import Portfolio from './components/Portfolio.svelte';
 </script>
 
 <style>
@@ -50,7 +51,8 @@
 </style>
 
 <Header/>
-<Portada />
+<Portada/>
 <AbautMe/>
 <Certification/>
 <Video/>
+<Portfolio/>

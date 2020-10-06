@@ -6,6 +6,7 @@
 
 	h1, p{
 		color: white;
+		text-align: center;
 	}
 
 	p{
@@ -15,13 +16,18 @@
 	section{
 		width: auto;
 		height: auto;
-		position: relative;
 		margin-top: 2rem;
+		position: relative;
+	}
+
+	article{
+		width: 100%;
+		height: 100%;
+		background-color: transparent; 
 	}
 	video{
-		box-sizing: border-box;
 		width: 100%;
-		height: auto;
+		height: 100%;
 	}
 
 	.overlay{
@@ -47,7 +53,7 @@
 		z-index: 2;
     width: 100%;
     height: 10vw;
-    fill: #eaeaea;
+    fill: #f1f1f1;
 	}
 	.angulo2 {
     position: absolute;
@@ -56,28 +62,30 @@
 		z-index: 2;
     width: 100%;
     height: 10vw;
-    fill: #eaeaea;
+    fill: #f1f1f1;
 	}
+
 	@media screen and (min-width: 1152px){
 		section{
 			margin-top: 4rem;
 		}
 	}
 </style>
+
 <section>
+	<article>
+		<video autoplay muted loop>
+			<source src={video} type="video/mp4" />
+		</video>
+		<div class="overlay">
+			<h1>Estoy ansioso de diseñar cosas increibles con codigo</h1>
+			<p>Puedes estar seguro que siempre pongo todo mi compromiso en lo que realizo para entregar el mejor proyecto posible.</p>
+		</div>
+	</article>
 	<svg viewBox="0 0 100 100" preserveAspectRatio="none" class="angulo1">
-		<!-- <polygon points="0,100 100,0 100,100" /> -->
 		<polygon points="100,0 0,100 0,0" />
 	</svg>
-	<video autoplay muted loop>
-		<source src={video} type="video/mp4" />
-	</video>
-	<div class="overlay">
-		<h1>Estoy ansioso de diseñar cosas increibles con codigo</h1>
-		<p>Puedes estar seguro que siempre pongo todo mi compromiso en lo que realizo para entregar el mejor proyecto posible.</p>
-	</div>
 	<svg viewBox="0 0 100 100" preserveAspectRatio="none" class="angulo2">
 		<polygon points="0,100 100,0 100,100" />
 	</svg>
 </section>
-
