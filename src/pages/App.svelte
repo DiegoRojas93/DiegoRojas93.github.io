@@ -5,6 +5,8 @@
 	import Certification from './components/Certification.svelte';
 	import Video from './components/Video.svelte';
 	import Portfolio from './components/Portfolio.svelte';
+
+	import MediaQuery from "./utils/MediaQuery.svelte";
 </script>
 
 <style>
@@ -41,11 +43,13 @@
 		font-family: 'Orbitron', sans-serif;
 		color: #008890;
 		display: inline;
+		text-align: center;
 	}
 
 	:global(p){
 		color: #302F3E;
 		margin: 0;
+		text-align: center;
 	}
 
 </style>
@@ -54,5 +58,9 @@
 <Portada/>
 <AbautMe/>
 <Certification/>
-<Video/>
+<MediaQuery query="(min-width: 768px)" let:matches>
+	{#if matches}
+		<Video/>
+	{/if}
+</MediaQuery>
 <Portfolio/>

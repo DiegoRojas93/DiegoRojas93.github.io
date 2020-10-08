@@ -28,15 +28,7 @@
 		href = comprovationLink(data.link);
 		marco = data.marco;
 
-		console.log(alt)
-
 	}, 3000);
-
-	const recarga = () => {
-		if(confirmation.toggle){
-			confirmation.toggle = !confirmation.toggle;
-		}
-	};
 
 </script>
 
@@ -66,9 +58,9 @@
 </style>
 
 <section>
-	<figure transition:fade>
+	<figure>
 		<a {href} target="_blank" class:marco="{marco === true}">
-			<img {src} {alt} on:load={recarga()}  title={alt}/>
+			<img {src} {alt} title={alt}/>
 		</a>
 	</figure>
 </section>
