@@ -5,6 +5,7 @@
 	import Certification from './components/Certification.svelte';
 	import Video from './components/Video.svelte';
 	import Portfolio from './components/Portfolio.svelte';
+	import Coding from './components/Coding.svelte';
 
 	import MediaQuery from "./utils/MediaQuery.svelte";
 </script>
@@ -64,3 +65,8 @@
 	{/if}
 </MediaQuery>
 <Portfolio/>
+<MediaQuery query="(min-width: 1152px)" let:matches>
+	{#if matches}
+		<Coding/>
+	{/if}
+</MediaQuery>

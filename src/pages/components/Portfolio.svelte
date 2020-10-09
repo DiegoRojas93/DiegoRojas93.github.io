@@ -1,5 +1,5 @@
 <script>
-	let title ='</Portfolio>';
+	let title ='</ Portfolio >';
 
 	let IMAGES = [
 		{	id: 1,
@@ -11,44 +11,44 @@
 			showCode: 'https://github.com/DiegoRojas93/Plazti_Video'
 		},
 		{	id: 2,
-			title: 'Platzi Video',
+			title: '100tifi.co',
 			mac: '../../public/images/Portfolio/Mac2.webp',
 			macbook: '../../public/images/Portfolio/macbook2.webp',
 			smartphone: '../../public/images/Portfolio/smartphone2.webp',
-			showWork: 'https://diegorojas93.github.io/Plazti_Video/',
-			showCode: 'https://github.com/DiegoRojas93/Plazti_Video'
+			showWork: 'https://diegorojas93.github.io/SPA/',
+			showCode: 'https://github.com/DiegoRojas93/SPA'
 		},
 		{	id: 3,
-			title: 'Platzi Video',
+			title: 'Postcast',
 			mac: '../../public/images/Portfolio/Mac3.webp',
 			macbook: '../../public/images/Portfolio/macbook3.webp',
 			smartphone: '../../public/images/Portfolio/smartphone3.webp',
-			showWork: 'https://diegorojas93.github.io/Plazti_Video/',
-			showCode: 'https://github.com/DiegoRojas93/Plazti_Video'
+			showWork: 'https://podcasts-de-platzi.vercel.app/',
+			showCode: 'https://github.com/DiegoRojas93/Podcasts_de_Platzi'
 		},
 		{	id: 4,
-			title: 'Platzi Video',
+			title: 'Simon Dice',
 			mac: '../../public/images/Portfolio/Mac4.webp',
 			macbook: '../../public/images/Portfolio/macbook4.webp',
 			smartphone: '../../public/images/Portfolio/smartphone4.webp',
-			showWork: 'https://diegorojas93.github.io/Plazti_Video/',
-			showCode: 'https://github.com/DiegoRojas93/Plazti_Video'
+			showWork: 'https://diegorojas93.github.io/Simon_Dice/Index.html',
+			showCode: 'https://github.com/DiegoRojas93/Simon_Dice'
 		},
 		{	id: 5,
-			title: 'Platzi Video',
+			title: 'Platzi Conf',
 			mac: '../../public/images/Portfolio/Mac5.webp',
 			macbook: '../../public/images/Portfolio/macbook5.webp',
 			smartphone: '../../public/images/Portfolio/smartphone5.webp',
-			showWork: 'https://diegorojas93.github.io/Plazti_Video/',
-			showCode: 'https://github.com/DiegoRojas93/Plazti_Video'
+			showWork: 'https://diegorojas93.github.io/Platzi-Talks-bootstrap/',
+			showCode: 'https://github.com/DiegoRojas93/Platzi-Talks-bootstrap'
 		},
 		{	id: 6,
-			title: 'Platzi Video',
+			title: 'Platzi Foot',
 			mac: '../../public/images/Portfolio/Mac6.webp',
 			macbook: '../../public/images/Portfolio/macbook6.webp',
 			smartphone: '../../public/images/Portfolio/smartphone6.webp',
-			showWork: 'https://diegorojas93.github.io/Plazti_Video/',
-			showCode: 'https://github.com/DiegoRojas93/Plazti_Video'
+			showWork: 'https://diegorojas93.github.io/PlatziFoot/public/home.html',
+			showCode: 'https://github.com/DiegoRojas93/PlatziFoot'
 		},
 	];
 </script>
@@ -386,7 +386,7 @@
 									<i class="flaticon-diseno-web"/>
 									<p>Ver Proyecto</p>
 								</a>
-								<h2>platzi video</h2>
+								<h2>{image.title}</h2>
 								<a href={image.showCode} target="_blank">
 									<i class="flaticon-programacion"/>
 									<p>Ver Proyecto</p>
