@@ -6,6 +6,7 @@
 	import Video from './components/Video.svelte';
 	import Portfolio from './components/Portfolio.svelte';
 	import Coding from './components/Coding.svelte';
+	import Footer from './components/Footer.svelte';
 
 	import MediaQuery from "./utils/MediaQuery.svelte";
 </script>
@@ -51,6 +52,7 @@
 		color: #302F3E;
 		margin: 0;
 		text-align: center;
+		font-size: 1rem;
 	}
 
 </style>
@@ -65,8 +67,9 @@
 	{/if}
 </MediaQuery>
 <Portfolio/>
-<MediaQuery query="(min-width: 1152px)" let:matches>
+<!-- <MediaQuery query="(min-width: 1152px)" let:matches>
 	{#if matches}
 		<Coding/>
 	{/if}
-</MediaQuery>
+</MediaQuery> -->
+<Footer/>

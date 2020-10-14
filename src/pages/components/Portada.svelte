@@ -69,11 +69,6 @@
 		overflow: hidden;
 	}
 
-	.item {
-		box-sizing: border-box;
-		border: 1px dashed red;
-	}
-
 	.mac {
 		grid-column: 1 / 3;
 		grid-row: 1 / 3;

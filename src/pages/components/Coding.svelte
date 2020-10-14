@@ -8,7 +8,6 @@
 		width: 100%;
 		max-width: 100vw;
 		height: auto;
-		/* padding: 2rem 5rem 2rem 1rem; */
 	}
 
   .title{
