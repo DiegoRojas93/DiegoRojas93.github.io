@@ -51,31 +51,37 @@
 		<ul>
 			<li>
 				{#if animation===1}
-					<p in:fly={{ y: 20, duration: 300 }}>Abaut me</p>
+					<a in:fly="{{ y: 20, duration: 300 }}"  href="#AboutMe2">Abaut me</a>
+				{/if}
+				<span transition:fly="{{ x: 20, duration: 200} }">←</span>
+			</li>
+			<li>
+				{#if animation===1}
+					<a in:fly={{ y: 20, duration: 300 }} href="#certification">Certification</a>
 				{/if}
 				<span transition:fly="{{ x: 20, duration: 200}}">←</span>
 			</li>
 			<li>
 				{#if animation===1}
-					<p in:fly={{ y: 20, duration: 300 }}>Certification</p>
+					<a in:fly={{ y: 20, duration: 300 }} href="#skills">Skills</a>
 				{/if}
 				<span transition:fly="{{ x: 20, duration: 200}}">←</span>
 			</li>
 			<li>
 				{#if animation===1}
-					<p in:fly={{ y: 20, duration: 300 }}>Skills</p>
+					<a in:fly={{ y: 20, duration: 300 }} href="#porfolio">Porfolio</a>
 				{/if}
 				<span transition:fly="{{ x: 20, duration: 200}}">←</span>
 			</li>
 			<li>
 				{#if animation===1}
-					<p in:fly={{ y: 20, duration: 300 }}>Certification</p>
+					<a in:fly={{ y: 20, duration: 300 }} href="#certification">Certification</a>
 				{/if}
 				<span transition:fly="{{ x: 20, duration: 200}}">←</span>
 			</li>
 			<li>
 				{#if animation===1}
-					<p in:fly={{ y: 20, duration: 300 }}>Contact</p>
+					<a in:fly={{ y: 20, duration: 300 }} href="#contact">Contact</a>
 				{/if}
 				<span
 					transition:fly="{{ x: 20, duration: 200 }}"
@@ -87,7 +93,6 @@
 			</li>
 		</ul>
 	</nav>
-
 </div>
 
 <style>
@@ -126,8 +131,9 @@
 		justify-content: flex-end;
 	}
 
-	p {
+	a {
 		margin: 0;
 		font-size: 2rem;
+		text-decoration: none;
 	}
 </style>

@@ -76,11 +76,12 @@
 			<img src={logoDesk} alt="logo">
 			<nav>
 				<ul>
-					<li><a href="/">Abaut me</a></li>
-					<li><a href="/">Certification</a></li>
-					<li><a href="/">Skills</a></li>
-					<li><a href="/">Certification</a></li>
-					<li><a href="/">Contact</a></li>
+					<li><a href="#AboutMe2">Abaut me</a></li>
+					<li><a href="#certification">Certification</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#certification">Certification</a></li>
+					<li><a href="#porfolio">Porfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -93,11 +94,12 @@
 			<img src={logoMobile} alt="logo">
 			<nav>
 				<ul>
-					<li><p>Abaut me</p></li>
-					<li><p>Certification</p></li>
-					<li><p>Skills</p></li>
-					<li><p>Certification</p></li>
-					<li><p>Contact</p></li>
+					<li><a href="#AboutMe2">Abaut me</a></li>
+					<li><a href="#certification">Certification</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#certification">Certification</a></li>
+					<li><a href="#porfolio">Porfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>

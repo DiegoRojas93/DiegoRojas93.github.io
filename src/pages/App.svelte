@@ -1,11 +1,10 @@
 <script>
 	import Header from './components/Header.svelte';
 	import Portada from './components/Portada.svelte';
-	import AbautMe from './components/AboutMe2.svelte';
+	import AbautMe from './components/AboutMe.svelte';
 	import Certification from './components/Certification.svelte';
 	import Video from './components/Video.svelte';
 	import Portfolio from './components/Portfolio.svelte';
-	import Coding from './components/Coding.svelte';
 	import Footer from './components/Footer.svelte';
 
 	import MediaQuery from "./utils/MediaQuery.svelte";
@@ -22,6 +21,7 @@
 
 	:global(html){
 		font-size: 62.5%;
+		scroll-behavior: smooth;
 	}
 
 	:global(body) {
@@ -67,9 +67,4 @@
 	{/if}
 </MediaQuery>
 <Portfolio/>
-<!-- <MediaQuery query="(min-width: 1152px)" let:matches>
-	{#if matches}
-		<Coding/>
-	{/if}
-</MediaQuery> -->
 <Footer/>

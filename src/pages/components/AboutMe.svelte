@@ -120,7 +120,7 @@
 </style>
 
 <section>
-	<div class="title">
+	<div class="title" id="AboutMe2">
 		<h1>{title}</h1>
 	</div>
 

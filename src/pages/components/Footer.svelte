@@ -1,5 +1,5 @@
 <script>
-	let src = '../../public/images/Foto.webp';
+	let src = '../../public/images/Foto2.webp';
 	let comilla1 = '../../public/images/Comillas1.svg';
 	let comilla2 = '../../public/images/Comillas2.svg';
 	let svelte = '../../public/images/logos/Svelte.png';
@@ -28,7 +28,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: rgba(32, 25, 102, 0.9);
+		background-color: rgba(32, 25, 102, 0.900);
 	}
 
 	.overlay__container{
@@ -45,7 +45,7 @@
 		grid-row: 1 / 2;
 		width: 100%;
 		max-width: 100vw;
-		padding-top: 2rem;
+		/* padding-top: 2rem; */
 	}
 
 	.cv{
@@ -69,12 +69,11 @@
 		display: flex;
 		justify-content: center;
 		align-content: center;
-		background-color: #0E0A39;
 	}
 
 	.figure img {
 		width: 100%;
-		height: auto;
+		height: 100%;
 		object-fit: contain;
 	}
 
@@ -160,7 +159,7 @@
 		grid-row: 3 / 4;
 		height: 3.2rem;
 		height: 5%;
-		background-color: blueviolet;
+		background-color: #8a2be2;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -191,6 +190,10 @@
 
 		.buttom{
 			font-size: 12vh;
+		}
+
+		blockquote{
+			font-size: 1.6rem;
 		}
 
 		.buttoms{
@@ -228,6 +231,10 @@
 			grid-template: 100% / 50% 50%;
 		}
 
+		.title{
+			margin-top: 2rem;
+		}
+
 		.contactame{
 			grid-column: 1 / 2;
 			grid-row: 1 / 1;
@@ -238,6 +245,10 @@
 			width: 50%;
 			display: flex;
 			align-items: center;
+		}
+
+		blockquote{
+			font-size: 2rem;
 		}
 
 		.text p {
@@ -327,7 +338,7 @@
 				<button><p>Download</p></button>
 			<article/>
 		</section>
-			<section class="contactame">
+			<section class="contactame" id="contact">
 				<div class="title">
 					<h2>{contactame}</h2>
 				</div>

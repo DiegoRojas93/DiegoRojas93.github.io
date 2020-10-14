@@ -277,7 +277,7 @@
 <section>
 	<div class="certification">
 
-		<div class="title">
+		<div class="title" id="certification">
 			<h1>{title}</h1>
 		</div>
 
@@ -292,7 +292,7 @@
 
 	<div class="skills">
 
-		<div class="title">
+		<div class="title" id="skills">
 			<h1>{title2}</h1>
 		</div>
 
