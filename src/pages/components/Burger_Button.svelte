@@ -53,7 +53,7 @@
 		width: 0;
 		border-top: 10px solid #A3399F;
 	}
-	
+
 	i {
 		width: 1rem;
 		height: 13.78px;

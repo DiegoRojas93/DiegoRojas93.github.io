@@ -151,6 +151,10 @@
 		height: 100%;
 		max-width: 100vw;
 		max-height: 100vh;
+		display: grid;
+		grid-template: repeat(2, 1fr) /repeat(2, 1fr);
+		grid-template-areas: "hero nav"
+												 "contact nav";
 	}
 
 	.modal__container:before{
@@ -169,20 +173,15 @@
 	}
 
 	.figure{
+		grid-area: "hero";
 		box-sizing: border-box;
-		padding: 5rem 0 0 1rem;
 		width: auto;
-		max-width: 50%;
-		height: auto;
+		max-width: 100%;
+		height: 100%;
 		display: flex;
 		justify-content: center;
 		align-content: center;
 		flex-flow: column;
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 50%;
-		right: 50%;
 	}
 
 	.figure img {
@@ -193,7 +192,6 @@
 
 	.figure figcaption{
 		box-sizing: border-box;
-		/* height: 50%; */
 		text-align: center;
 		padding-top: 1rem;
 	}
@@ -210,7 +208,7 @@
 	}
 
 	nav{
-		padding: 0px 2em 0px 0px;
+		grid-area: "nav";
 		position: absolute;
 		top: 25%;
 		left: 50%;
@@ -245,12 +243,13 @@
 	}
 
 	.contact{
+		grid-area: "contact";
 		width: 50%;
-		position: absolute;
+		/* position: absolute;
 		left: 0;
 		bottom: 0;
 		right: 50%;
-		top: 50%;
+		top: 50%; */
 	}
 
 	.title{
