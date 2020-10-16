@@ -56,7 +56,7 @@
 		<!-- <button on:click={close}>close modal</button> -->
 
 		<div class="figure">
-			<img {src} alt="Foto"/>
+			<img {src} alt="Foto" in:fly="{{ y: -200, duration: 300 }}"/>
 			<figcaption>
 				<h1>Diego Rojas</h1>
 				<p>Puedes estar seguro que siempre pongo todo mi compromiso en lo que realizo para entregar el mejor proyecto posible.</p>
@@ -68,7 +68,7 @@
 			<ul>
 				<li>
 					{#if animation===1}
-						<a in:fly="{{ y: 20, duration: 300 }}"  href="#AboutMe2" on:click={close}>Abaut me</a>
+						<a in:fly="{{ y: 200, duration: 300 }}"  href="#AboutMe2" on:click={close}>Abaut me</a>
 					{/if}
 					<span transition:fly="{{ x: 20, duration: 200} }">←</span>
 				</li>

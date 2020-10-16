@@ -56,7 +56,7 @@
 		<!-- <button on:click={close}>close modal</button> -->
 
 		<div class="figure">
-			<img {src} alt="Foto"/>
+			<img {src} alt="Foto" in:fly="{{ y: -200, duration: 300 }}"/>
 			<figcaption>
 				<h1>Diego Rojas</h1>
 				<p>Puedes estar seguro que siempre pongo todo mi compromiso en lo que realizo para entregar el mejor proyecto posible.</p>
@@ -66,6 +66,12 @@
 
 		<nav>
 			<ul>
+				<li>
+					{#if animation===1}
+						<a in:fly="{{ y: 20, duration: 300 }}"  href="#Home" on:click={close}>Home</a>
+					{/if}
+					<span transition:fly="{{ x: 20, duration: 200} }">←</span>
+				</li>
 				<li>
 					{#if animation===1}
 						<a in:fly="{{ y: 20, duration: 300 }}"  href="#AboutMe2" on:click={close}>Abaut me</a>
@@ -117,12 +123,12 @@
 			</div>
 
 			<article class="contact__container">
-				<div class="icon__space">1</div>
-				<div class="icon__space">2</div>
-				<div class="icon__space">3</div>
-				<div class="icon__space">4</div>
-				<div class="icon__space">5</div>
-				<div class="icon__space">6</div>
+				<div class="icon__space"> <a type="buttom" href="https://twitter.com/DiegoFrontend" class="buttom" target="_blank"><i class="fab fa-twitter-square" /></a> </div>
+				<div class="icon__space"> <a type="buttom" href="https://www.linkedin.com/in/diego-rojas-4304/" class="buttom" target="_blank"> <i class="fab fa-linkedin"/></a> </div>
+				<div class="icon__space"> <a type="buttom" href="https://github.com/DiegoRojas93" class="buttom" target="_blank"> <i class="fab fa-github-square"/> </a> </div>
+				<div class="icon__space"> <a type="buttom" href="https://es.stackoverflow.com/users/167631/diego-rojas?tab=profile" class="buttom" target="_blank"> <i class="fab fab fa-stack-overflow"/> </a> </div>
+				<div class="icon__space"> <a type="buttom" href="https://codepen.io/diegorojas93" class="buttom" target="_blank"> <i class="fab fab fa-codepen"/> </a> </div>
+				<div class="icon__space"> <a type="buttom" href="https://co.pinterest.com/diegorojas431/_saved/" class="buttom" target="_blank"> <i class=" fab fa-pinterest-square"/> </a> </div>
 			</article>
 		</section>
 	</div>
@@ -173,7 +179,7 @@
 	}
 
 	.figure{
-		grid-area: "hero";
+		grid-area: hero;
 		box-sizing: border-box;
 		width: auto;
 		max-width: 100%;
@@ -182,11 +188,14 @@
 		justify-content: center;
 		align-content: center;
 		flex-flow: column;
+		/* padding-top: 4rem; */
 	}
 
 	.figure img {
-		width: 100%;
-		height: 100%;
+		padding-top: 4rem;
+		width: auto;
+		max-width: 100%;
+		height: auto;
 		object-fit: contain;
 	}
 
@@ -208,17 +217,16 @@
 	}
 
 	nav{
-		grid-area: "nav";
-		position: absolute;
-		top: 25%;
-		left: 50%;
-		bottom: 0;
-		right: 0;
+		grid-area: nav;
+		height: 50%;
+		width: 100%;
+		margin: auto 0;
+
 	}
 
 	ul{
 		margin: 0;
-		height: 75%;
+		height: 100%;
 		padding: 0;
 		text-align: right;
 		display: flex;
@@ -243,16 +251,49 @@
 	}
 
 	.contact{
-		grid-area: "contact";
-		width: 50%;
-		/* position: absolute;
-		left: 0;
-		bottom: 0;
-		right: 50%;
-		top: 50%; */
+		grid-area: contact;
+		width: 100%;
 	}
 
 	.title{
 		text-align: center;
+		margin-bottom: 1rem;
+		height: 1rem;
+	}
+
+	.contact__container{
+		width: 100%;
+		height: calc(100% - 2rem);
+		display: grid;
+		grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	.icon__space{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.buttom{
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		border-radius: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: background 300ms ease-in-out;
+	}
+	.buttom i{
+		cursor: pointer;
+		background-color: transparent;
+		font-size: 8rem;
+	}
+
+	.fab {
+		color: blueviolet;
 	}
 </style>
