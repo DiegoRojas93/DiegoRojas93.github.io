@@ -70,49 +70,51 @@
 					{#if animation===1}
 						<a in:fly="{{ y: 20, duration: 300 }}"  href="#Home" on:click={close}>Home</a>
 					{/if}
-					<span transition:fly="{{ x: 20, duration: 200} }">←</span>
+					<i transition:fly="{{ x: 20, duration: 200} }" class="fas fa-angle-double-left"></i>
 				</li>
 				<li>
 					{#if animation===1}
 						<a in:fly="{{ y: 20, duration: 300 }}"  href="#AboutMe2" on:click={close}>Abaut me</a>
 					{/if}
-					<span transition:fly="{{ x: 20, duration: 200} }">←</span>
+					<i transition:fly="{{ x: 20, duration: 200} }" class="fas fa-angle-double-left"></i>
 				</li>
 				<li>
 					{#if animation===1}
 						<a in:fly={{ y: 20, duration: 300 }} href="#certification" on:click={close}>Certification</a>
 					{/if}
-					<span transition:fly="{{ x: 20, duration: 200}}">←</span>
+					<i transition:fly="{{ x: 20, duration: 200} }" class="fas fa-angle-double-left"></i>
 				</li>
 				<li>
 					{#if animation===1}
 						<a in:fly={{ y: 20, duration: 300 }} href="#skills" on:click={close}>Skills</a>
 					{/if}
-					<span transition:fly="{{ x: 20, duration: 200}}">←</span>
+					<i transition:fly="{{ x: 20, duration: 200} }" class="fas fa-angle-double-left"></i>
 				</li>
 				<li>
 					{#if animation===1}
 						<a in:fly={{ y: 20, duration: 300 }} href="#porfolio" on:click={close}>Porfolio</a>
 					{/if}
-					<span transition:fly="{{ x: 20, duration: 200}}">←</span>
+					<i transition:fly="{{ x: 20, duration: 200} }" class="fas fa-angle-double-left"></i>
 				</li>
 				<li>
 					{#if animation===1}
 						<a in:fly={{ y: 20, duration: 300 }} href="#certification" on:click={close}>Certification</a>
 					{/if}
-					<span transition:fly="{{ x: 20, duration: 200}}">←</span>
+					<i transition:fly="{{ x: 20, duration: 200} }" class="fas fa-angle-double-left"></i>
 				</li>
 				<li>
 					{#if animation===1}
 						<a in:fly={{ y: 20, duration: 300 }} href="#contact" on:click={close}>Contact</a>
 					{/if}
-					<span
-						transition:fly="{{ x: 20, duration: 200 }}"
+
+					<i
+						class="fas fa-angle-double-left"
+						transition:fly="{{ x: 20, duration: 200} }"
 						on:introstart="{() => animation = 0}"
 						on:outrostart="{() => animation = 1}"
 						on:introend="{() => animation = 1}"
 						on:outroend="{() => animation = 1}"
-					>←</span>
+					></i>
 				</li>
 			</ul>
 		</nav>
@@ -126,7 +128,7 @@
 				<div class="icon__space"> <a type="buttom" href="https://twitter.com/DiegoFrontend" class="buttom" target="_blank"><i class="fab fa-twitter-square" /></a> </div>
 				<div class="icon__space"> <a type="buttom" href="https://www.linkedin.com/in/diego-rojas-4304/" class="buttom" target="_blank"> <i class="fab fa-linkedin"/></a> </div>
 				<div class="icon__space"> <a type="buttom" href="https://github.com/DiegoRojas93" class="buttom" target="_blank"> <i class="fab fa-github-square"/> </a> </div>
-				<div class="icon__space"> <a type="buttom" href="https://es.stackoverflow.com/users/167631/diego-rojas?tab=profile" class="buttom" target="_blank"> <i class="fab fab fa-stack-overflow"/> </a> </div>
+				<div class="icon__space"> <a type="buttom" href="https://es.stackoverflow.com/users/167631/diego-rojas?tab=profile" class="buttom" target="_blank"> <i class="fab fa-stack-overflow"/> </a> </div>
 				<div class="icon__space"> <a type="buttom" href="https://codepen.io/diegorojas93" class="buttom" target="_blank"> <i class="fab fab fa-codepen"/> </a> </div>
 				<div class="icon__space"> <a type="buttom" href="https://co.pinterest.com/diegorojas431/_saved/" class="buttom" target="_blank"> <i class=" fab fa-pinterest-square"/> </a> </div>
 			</article>
@@ -246,7 +248,7 @@
 		text-decoration: none;
 	}
 
-	span{
+  i{
 		padding: auto;
 	}
 

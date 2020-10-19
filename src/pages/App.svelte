@@ -1,6 +1,6 @@
 <script>
 	import Header from './components/Header.svelte';
-	import Portada from './components/Portada.svelte';
+	import Portada from './components/Portada2.svelte';
 	import AbautMe from './components/AboutMe.svelte';
 	import Certification from './components/Certification.svelte';
 	import Video from './components/Video.svelte';
@@ -53,6 +53,7 @@
 		margin: 0;
 		text-align: center;
 		font-size: 1rem;
+		font-family: 'IBM Plex Sans', sans-serif;
 	}
 
 </style>

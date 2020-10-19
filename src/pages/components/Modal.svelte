@@ -70,7 +70,8 @@
 					{#if animation===1}
 						<a in:fly="{{ y: 200, duration: 300 }}"  href="#AboutMe2" on:click={close}>Abaut me</a>
 					{/if}
-					<span transition:fly="{{ x: 20, duration: 200} }">←</span>
+					<i transition:fly="{{ x: 20, duration: 200} }" class="fad fa-angle-double-left"></i>
+					<!-- <span transition:fly="{{ x: 20, duration: 200} }">←</span> -->
 				</li>
 				<li>
 					{#if animation===1}
@@ -240,7 +241,7 @@
 		text-decoration: none;
 	}
 
-	span{
+	i{
 		padding: auto;
 	}
 

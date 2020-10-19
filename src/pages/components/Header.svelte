@@ -34,6 +34,7 @@
 		padding: 0px 32px;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	ul{
@@ -43,6 +44,7 @@
 	}
 
 	.tablet ul {
+		margin-top: 2rem;
 		width: 100vw;
 		justify-content: space-evenly;
 	}
@@ -56,15 +58,22 @@
 		list-style: none;
 	}
 
-	.header img {
+	.logo {
+		height: 6rem;
+		display: inline-block;
+	}
+
+	.logo img {
 		width: auto;
-		height: auto;
+		height: 100%;
 		display: inline-block;
 	}
 
 	a {
 		font-size: 1.6rem;
 		font-family: 'Orbitron', sans-serif;
+		color: #008891;
+		text-decoration: none;
 	}
 
 </style>
@@ -73,7 +82,9 @@
 <MediaQuery query="(min-width: 1152px)" let:matches>
 	{#if matches}
 		<header class="header desktop">
-			<img src={logoDesk} alt="logo">
+			<div class="logo">
+				<img src={logoDesk} alt="logo">
+			</div>
 			<nav>
 				<ul>
 					<li><a href="#AboutMe2">Abaut me</a></li>
@@ -91,7 +102,7 @@
 <MediaQuery query="(min-width: 768px) and (max-width: 1151px)" let:matches>
 	{#if matches}
 		<header class="header tablet">
-			<img src={logoMobile} alt="logo">
+			<img src={logoMobile} alt="logo" >
 			<nav>
 				<ul>
 					<li><a href="#AboutMe2">Abaut me</a></li>

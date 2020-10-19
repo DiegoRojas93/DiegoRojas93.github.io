@@ -11,7 +11,7 @@
 		background-color: orchid;
 	}
 
-	button{
+	.menu{
 		position: fixed;
 		top: 2rem;
 		right: 1rem;
@@ -62,11 +62,28 @@
 		padding: 0;
 	}
 
+	.up{
+		position: fixed;
+		bottom: 5rem;
+		right: 1rem;
+		background: transparent;
+		border: none;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+
 </style>
 
-<button on:click="{() => showModal = true}">
+<button class="menu" on:click="{() => showModal = true}">
 	<div class="hexagon">
 			<i class="fas fa-bars"></i>
+	</div>
+</button>
+
+<button class="up">
+	<div class="hexagon">
+		<a href="#Home"><i class="fas fa-angle-up"></i></a>
 	</div>
 </button>
 

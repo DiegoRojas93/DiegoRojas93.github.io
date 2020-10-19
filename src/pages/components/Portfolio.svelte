@@ -389,7 +389,7 @@
 								<h2>{image.title}</h2>
 								<a href={image.showCode} target="_blank">
 									<i class="flaticon-programacion"/>
-									<p>Ver Proyecto</p>
+									<p>Ver Código</p>
 								</a>
 							</section>
 						</div>

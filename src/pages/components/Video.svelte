@@ -65,6 +65,14 @@
     fill: #f1f1f1;
 	}
 
+	h1{
+		font-size: 3rem;
+	}
+
+	p{
+		font-size: 1.6rem;
+	}
+
 	@media screen and (min-width: 1152px){
 		section{
 			margin-top: 4rem;
