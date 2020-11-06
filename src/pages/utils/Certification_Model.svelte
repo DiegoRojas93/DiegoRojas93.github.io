@@ -1,5 +1,6 @@
 <script>
 
+
 	export let info;
 
 	let confirmation = {toggle: false};
@@ -25,7 +26,7 @@
 		data = info[random] || null;
 
 		if (data === null) {
-			 return data = ''
+			return data = ''
 		}else{
 			alt = data.name;
 			src = data.image;
@@ -34,6 +35,7 @@
 			show = data.show;
 		}
 	}, 3000);
+
 
 </script>
 

@@ -1,126 +1,225 @@
 <script>
+	import { fly } from 'svelte/transition';
+	import { onMount } from 'svelte';
+
 	import MediaQuery from "../utils/MediaQuery.svelte";
 
-	let asa = '../../public/images/asa.webp';
-	let macbook = '../public/images/Macbook.webp';
-	let keyboard = '../public/images/keyboard.webp';
-	let mouse = '../public/images/Mouse.webp';
-	let pen = '../public/images/Pen.webp';
-	let book = '../public/images/Book.webp';
-	let pantone = '../public/images/Pantone.webp';
+	let Hero = '../public/images/hero.svg';
+	let landing = '../public/images/Landing.webp';
+
+	let title = '< Hello wordl! />'
+	let visible = false;
+
+
+	onMount(async () => {
+		visible = true
+	});
 </script>
 
 <style>
-
-	section{
-		box-sizing: border-box;
-		height: 100vh;
+	.Hero{
+		width: 100%;
+		height: 100%;
 		max-width: 100vw;
+		max-height: 100vh;
 		display: flex;
-	}
-
-	.portada{
-		height: 100vh;
-		width: 50Vw;
-		background: radial-gradient(50% 50% at 50% 50%, rgba(32, 25, 102, 0.75) 0%, #141040 100%);
 		position: relative;
 		overflow: hidden;
 	}
 
-	.portfolio{
+	.Hero svg {
 		position: absolute;
-		top: 25%;
-		left: calc(50Vw - 6rem);
-		bottom: 10%;
-		max-height: 100Vh;
-		width: 20px;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		width: 100%;
 		height: auto;
-		writing-mode:vertical-rl;
-		text-orientation: upright;
-		font-size: 4rem;
-		color: #008890;
-		text-align: center;
-		font-family: 'Orbitron', sans-serif;
-		margin: auto 0;
 	}
 
-	img {
-		object-fit: scale-down;
+	.hero__container {
+		padding-top: calc(51px + 4rem);
+		height: calc(100% - (51px + 4rem));
 		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.Hero__container-left, .Hero__container-right{
+		box-sizing: border-box;
+		width: 100%;
+		height: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.Landing__image{
+		width: auto;
+		height: 85%;
+	}
+
+	.Landing__image img{
+		width: auto;
 		height: 100%;
 	}
 
-	.asa{
-		width: auto;
-		height: auto;
-		position: absolute;
-		right: 0;
-		top: calc(50% - 65px);
+	.info{
+		width: 100%;
+		height: 95%;
+		padding: 0rem 5rem 0rem 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: space-evenly;
 	}
 
-	.container{
-		box-sizing: border-box;
-		width: 50vw;
-		height: 100vh;
-		padding-top: 90px;
-		display: grid;
-		grid-template: repeat(4, 1fr) / repeat(4, 1fr);
-		gap: 1rem;
-		overflow: hidden;
+	.buttoms__container{
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
 	}
 
-	.mac {
-		grid-column: 1 / 3;
-		grid-row: 1 / 3;
+	.buttom{
+		font-size: 8vh;
+		text-decoration: none;
 	}
 
-	.keyboard {
-		grid-column: 3 / 5;
-		grid-row: 0 / 2;
+	p{
+		text-align: start;
+		font-size: 1.6rem;
 	}
-	.book {
-		grid-column: 1 / 3;
-		grid-row: 3 / 5;
+
+	h1{
+		font-size: 2.4rem;
 	}
-	.pantone {
-		grid-column: 3 / 5;
-		grid-row: 3 / 5;
+
+	.fab {
+		color: blueviolet;
+		text-align: left;
 	}
+
+	@media screen and (min-width: 768px){
+		.hero__container {
+			padding-top: calc(91px + 4rem);
+			height: calc(100% - (91px + 4rem));
+		}
+
+		.Landing__image{
+			height: 100%;
+		}
+
+		.info{
+			align-items: center;
+			padding: 0;
+		}
+
+		.buttom{
+			font-size: 12vh;
+			text-decoration: none;
+		}
+
+		h1{
+			font-size: 3.2rem;
+		}
+
+		.fab {
+			text-align: center;
+		}
+	}
+
+	@media screen and (min-width: 1152px){
+		.hero__container{
+			padding-top: calc(60px + 4rem);
+			height: calc(100% - (60px + 4rem));
+			display: flex;
+		}
+
+		.Hero__container-left, .Hero__container-right{
+			width: 50%;
+			height: 100%;
+		}
+
+		.Hero__container-left{
+			padding: 5% 0;
+		}
+		.Hero__container-right{
+			padding-top: 5%;
+			padding: 5% 0 20% 0;
+			align-items: start;
+		}
+
+
+		.info{
+			justify-content: space-between;
+			align-items: flex-start;
+			height: 50%;
+		}
+
+
+		.buttoms__container{
+			width: 30%;
+			justify-content: space-between;
+		}
+
+		.buttom{
+			font-size: 8vh;
+		}
+
+		.fab {
+			text-align: left;
+		}
+
+		p{
+			color: #f1f1f1;
+		}
+	}
+
 </style>
 
-<section>
-	<div class="portada">
-		<p class="portfolio">Portfolio</p>
-		<MediaQuery query="(min-width: 1152px)" let:matches>
-			{#if matches}
-				<img src={asa} alt="asa" class="asa"/>
-			{/if}
-		</MediaQuery>
+<section class="Hero">
+
+	<div>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="800" viewBox="0 0 1920 800">
+			<defs>
+				<linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+					<stop offset="0" stop-color="#201966" stop-opacity="0.851"/>
+					<stop offset="1" stop-color="#141040"/>
+				</linearGradient>
+			</defs>
+			<g id="Grupo_354" data-name="Grupo 354" transform="translate(3468 -5583)">
+				<rect id="Rectángulo_325" data-name="Rectángulo 325" width="1920" height="800" transform="translate(-3468 5583)" fill="none"/>
+				<path id="Trazado_439" data-name="Trazado 439" d="M-.024,0H1499.419V581.672L1198.077,768.684s-45.3,30.551-102,31.3-124.877-31.3-124.877-31.3L59.528,326.273s-34.009-15.539-48.9-44.044S-.024,212.255-.024,212.255Z" transform="translate(-3047.539 5583)" fill="url(#linear-gradient)"/>
+			</g>
+		</svg>
 	</div>
 
-	<MediaQuery query="(min-width: 1152px)" let:matches>
-		{#if matches}
-			<div class="container">
-				<div class="item mac">
-					<img src={macbook} alt="macbook">
-				</div>
-				<div class="item keyboard">
-					<img src={keyboard} alt="keyboard">
-				</div>
-				<div class="item mouse">
-					<img src={mouse} alt="mouse">
-				</div>
-				<div class="item pen">
-					<img src={pen} alt="pen">
-				</div>
-				<div class="item book">
-					<img src={book} alt="book">
-				</div>
-				<div class="item pantone">
-					<img src={pantone} alt="pantone">
-				</div>
+
+	<div class="hero__container">
+		<article class="Hero__container-left">
+			<div class="Landing__image">
+			{#if visible}
+				<img src={landing} alt="Hero" transition:fly={{ x: -200, duration: 5000 }}/>
+				{/if}
 			</div>
-		{/if}
-	</MediaQuery>
+		</article>
+		<article class="Hero__container-right">
+			<div class="info">
+				<section class="buttoms__container">
+					<a href="https://twitter.com/DiegoFrontend" class="buttom fab fa-twitter-square" target="_blank"></a>
+					<a href="https://www.linkedin.com/in/diego-rojas-4304/" class="buttom fab fa-linkedin" target="_blank"></a>
+					<a href="https://github.com/DiegoRojas93" class="buttom fab fa-github-square" target="_blank"></a>
+				</section>
+				<h1>{title}</h1>
+				<p>El código y el diseño es la mejor combinación que conforma un Frontend</p>
+			</div>
+		</article>
+	</div>
+
+			<!-- <i class="fas fa-angle-double-down"></i> -->
 
 </section>

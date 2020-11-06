@@ -13,27 +13,27 @@
 	footer{
 		height: 100vh;
 		max-width: 100vw;
-		background-image: url('../../public/images/Footer.webp');
-		background-position: center;
-		background-repeat: no-repeat;
 		position: relative;
+		/* margin-top: 2rem; */
 	}
 
-	.overlay{
-		box-sizing: border-box;
-		width: 100%;
-		max-width: 100vw;
+	svg{
 		position: absolute;
-		top: 0;
-		left: 0;
 		right: 0;
+		left: 0;
 		bottom: 0;
-		background-color: rgba(32, 25, 102, 0.900);
+		width: 100%;
+		height: auto;
+		border: #8a2be2;
 	}
 
 	.overlay__container{
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
 		box-sizing: border-box;
-		/* width: 100%; */
 		max-width: 100vw;
 		height: 95%;
 		display: grid;
@@ -104,9 +104,10 @@
 
 	blockquote{
 		display: block;
-		color: #F1F1F1;
+		color: #302F3E;
 		margin: 2rem auto;
 		font-size: 1rem;
+		font-family: 'IBM Plex Sans', sans-serif;
 	}
 
 	.contactame{
@@ -127,7 +128,6 @@
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
-		/* align-items: center; */
 	}
 
 	.text{
@@ -136,6 +136,7 @@
 
 	.text p{
 		text-align: center;
+		font-family: 'IBM Plex Sans', sans-serif;
 	}
 
 	.buttoms__container{
@@ -156,6 +157,10 @@
 	}
 
 	.copyright{
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0;
 		grid-row: 3 / 4;
 		height: 3.2rem;
 		height: 5%;
@@ -214,7 +219,6 @@
 
 		.text p {
 			color: #f1f1f1;
-			font-size: 1.6rem;
 		}
 
 		.copyright{
@@ -227,6 +231,10 @@
 	}
 
 	@media screen and (min-width: 1152px){
+
+		footer{
+			margin-top: 6rem
+		}
 		.overlay__container{
 			grid-template: 100% / 50% 50%;
 		}
@@ -248,12 +256,9 @@
 		}
 
 		blockquote{
-			font-size: 2rem;
+			font-size: 1.6rem;
 		}
 
-		.text p {
-			font-size: 2rem;
-		}
 
 		.buttoms__container{
 			width: 50%;
@@ -286,7 +291,6 @@
 
 		.cv p{
 			color: #f1f1f1;
-			font-size: 2rem;
 		}
 
 		button{
@@ -305,15 +309,30 @@
 		background-position: 0;
 		color: #aaa;
 		}
+
+		h3{
+			color: #f1f1f1;
+		}
 	}
-
-
 
 </style>
 
 <footer>
-	<div class="overlay">
-		<div class="overlay__container">
+
+	<div>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920.12" height="800" viewBox="0 0 1920.12 800">
+			<defs>
+				<linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+					<stop offset="0" stop-color="#201966" stop-opacity="0.851"/>
+					<stop offset="1" stop-color="#141040"/>
+				</linearGradient>
+			</defs>
+			<path id="Trazado_439" data-name="Trazado 439" d="M.132,0H1919.539V581.672L1533.8,768.684s-57.99,30.551-130.573,31.3-159.852-31.3-159.852-31.3L76.363,326.273S32.828,310.734,13.77,282.229.132,212.255.132,212.255Z" transform="translate(1919.539 800) rotate(180)" fill="url(#linear-gradient)"/>
+		</svg>
+
+	</div>
+
+	<div class="overlay__container">
 		<section class="cv__referencia">
 			<section class="referencia">
 				<div class="figure">
@@ -334,32 +353,31 @@
 				</article>
 			</section>
 			<article class="cv">
-				<p>Si no haz visto mi Hoja de vida te invito a que la descargues</p>
+				<h3>Si no haz visto mi Hoja de vida te invito a que la descargues</h3>
 				<button><p>Download</p></button>
 			<article/>
 		</section>
-			<section class="contactame" id="contact">
-				<div class="title">
-					<h2>{contactame}</h2>
+		<section class="contactame" id="contact">
+			<div class="title">
+				<h2>{contactame}</h2>
+			</div>
+			<div class="buttoms">
+				<div class="text">
+					<p>Si tienes una oferta de trabajo y estás interesado en que trabajemos juntos o simplemente quiere saludarme, contáctame en las siguientes redes sociales.</p>
 				</div>
-				<div class="buttoms">
-					<div class="text">
-						<p>Si tienes una oferta de trabajo y estás interesado en que trabajemos juntos o simplemente quiere saludarme, contáctame en las siguientes redes sociales.</p>
-					</div>
-					<div class="buttoms__container">
-						<a href="https://twitter.com/DiegoFrontend" class="buttom fab fa-twitter-square" target="_blank"></a>
-						<a href="https://www.linkedin.com/in/diego-rojas-4304/" class="buttom fab fa-linkedin" target="_blank"></a>
-						<a href="https://github.com/DiegoRojas93" class="buttom fab fa-github-square" target="_blank"></a>
-						<a href="https://es.stackoverflow.com/users/167631/diego-rojas?tab=profile" class="buttom fab fa-stack-overflow" target="_blank"></a>
-						<a href="https://codepen.io/diegorojas93" class="buttom fab fa-codepen" target="_blank"></a>
-						<a href="https://co.pinterest.com/diegorojas431/_saved/" class="buttom fab fa-pinterest-square" target="_blank"></a>
-					</div>
+				<div class="buttoms__container">
+					<a href="https://twitter.com/DiegoFrontend" class="buttom fab fa-twitter-square" target="_blank"></a>
+					<a href="https://www.linkedin.com/in/diego-rojas-4304/" class="buttom fab fa-linkedin" target="_blank"></a>
+					<a href="https://github.com/DiegoRojas93" class="buttom fab fa-github-square" target="_blank"></a>
+					<a href="https://es.stackoverflow.com/users/167631/diego-rojas?tab=profile" class="buttom fab fa-stack-overflow" target="_blank"></a>
+					<a href="https://codepen.io/diegorojas93" class="buttom fab fa-codepen" target="_blank"></a>
+					<a href="https://co.pinterest.com/diegorojas431/_saved/" class="buttom fab fa-pinterest-square" target="_blank"></a>
 				</div>
-			</section>
-		</div>
-		<section class="copyright">
-			<p>&copy; 2020 Todos los derechos reservados | <strong>Diego Rojas</strong></p>
-			<p>Hecho con ❤ Diego Rojas | <img src={svelte} alt="svelte"/> | <img src={webpack} alt="webpack"/> | <img src={NPM} alt="NPM"/> |</p>
+			</div>
 		</section>
 	</div>
+	<section class="copyright">
+		<p>&copy; 2020 Todos los derechos reservados | <strong>Diego Rojas</strong></p>
+		<p>Hecho con ❤ Diego Rojas | <img src={svelte} alt="svelte"/> | <img src={webpack} alt="webpack"/> | <img src={NPM} alt="NPM"/> |</p>
+	</section>
 </footer>

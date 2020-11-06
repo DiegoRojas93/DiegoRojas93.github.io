@@ -16,14 +16,13 @@
 	section{
 		width: auto;
 		height: auto;
-		margin-top: 2rem;
 		position: relative;
 	}
 
 	article{
 		width: 100%;
 		height: 100%;
-		background-color: transparent; 
+		background-color: transparent;
 	}
 	video{
 		width: 100%;
@@ -39,7 +38,7 @@
 		left: 0;
 		right: 0;
 		z-index: 1;
-		background-color: rgba(14, 10, 57, 0.8);
+		background-color: rgba(20,16,64,0.8);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -65,17 +64,9 @@
     fill: #f1f1f1;
 	}
 
-	h1{
-		font-size: 3rem;
-	}
-
-	p{
-		font-size: 1.6rem;
-	}
-
 	@media screen and (min-width: 1152px){
 		section{
-			margin-top: 4rem;
+			margin-bottom: 10Vh;
 		}
 	}
 </style>

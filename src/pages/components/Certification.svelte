@@ -108,6 +108,14 @@
 	]
 
 	let lenguajes = '../../public/images/Lenguajes.webp';
+
+
+	let item = document.querySelectorAll('.item');
+
+		console.log(item[1]);
+	// item[1].addEventListener("mousemove", (e) => {
+	// 	console.log(e.pageX);
+	// });
 </script>
 
 <style>
@@ -133,8 +141,9 @@
 	}
 
 	.item{
-		background: rgba(26, 22, 72, 0.5);
-		box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5), inset -1px -1px 2px #FFFFFF;
+		background: radial-gradient(50% 50% at 50% 50%, rgba(32, 25, 102, 0.75) 0%, #141040 95%, #141040 100%);
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+		border-radius: 1rem;
 	}
 
 	.certification1{
@@ -223,6 +232,7 @@
 		}
 
 		.lenguajes {
+			width: 50%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -233,6 +243,7 @@
 			height:100%;
 			max-height: 100vh;
 			display: flex;
+			margin-bottom: 20Vh;
 		}
 
 		.certification{
@@ -278,7 +289,7 @@
 	<div class="certification">
 
 		<div class="title" id="certification">
-			<h1>{title}</h1>
+			<h2>{title}</h2>
 		</div>
 
 		<article class="article__certification">
@@ -293,7 +304,7 @@
 	<div class="skills">
 
 		<div class="title" id="skills">
-			<h1>{title2}</h1>
+			<h2>{title2}</h2>
 		</div>
 
 		<div class="skills__division">

@@ -1,15 +1,10 @@
 <script>
-	import Modal from './Modal2.svelte';
+	import Modal from './Modal.svelte';
 
 	let showModal = false;
 </script>
 
 <style>
-	div{
-		width: auto;
-		height: auto;
-		background-color: orchid;
-	}
 
 	.menu{
 		position: fixed;
@@ -20,13 +15,14 @@
 		padding: 0;
 		margin: 0;
 		text-align: center;
+		z-index: 10;
 	}
 
 	.hexagon {
 		position: relative;
 		width: 30px;
 		height: 17.321px;
-		background-color: #A3399F;
+		background-color: #8429D8;
 		margin: 0;
 		display: flex;
 		flex-direction: column;
@@ -45,13 +41,13 @@
 
 	.hexagon:before {
 		bottom: 100%;
-		border-bottom: 10px solid #A3399F;
+		border-bottom: 10px solid #8429D8;
 	}
 
 	.hexagon:after {
 		top: 100%;
 		width: 0;
-		border-top: 10px solid #A3399F;
+		border-top: 10px solid #8429D8;
 	}
 
 	i {
@@ -71,13 +67,14 @@
 		padding: 0;
 		margin: 0;
 		text-align: center;
+		z-index: 11;
 	}
 
 </style>
 
 <button class="menu" on:click="{() => showModal = true}">
 	<div class="hexagon">
-			<i class="fas fa-bars"></i>
+		<i class="fas fa-bars"></i>
 	</div>
 </button>
 

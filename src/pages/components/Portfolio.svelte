@@ -308,8 +308,8 @@
 
 	.icons p {
 		font-weight: 600;
+		font-size: 1rem;
 		color: blueviolet;
-		/* text-align: center; */
 	}
 
 	.anchor__container{
@@ -331,6 +331,11 @@
 		transform: translate(20rem, 40rem) ;
 	}
 
+	h3{
+		margin-top: 1rem;
+		font-size: 1.6rem;
+	}
+
 
 	@media screen and (min-width: 768px){
 		section{
@@ -344,21 +349,35 @@
 		.container{
 			grid-template: repeat(3, auto) / repeat(2, 1fr) ;
 		}
+
+		h3{
+			margin-top: 2rem;
+			font-size: 1.872rem;
+		}
+
+		.icons p {
+			font-size: 1.6rem;
+		}
 	}
 
 	@media screen and (min-width: 1152px){
+
+		section{
+			margin-bottom: 10vh;
+		}
 		.item{
 			height: calc(30vw - 5rem);
 		}
 		.container{
 			grid-template: repeat(2, auto) / repeat(3, 1fr) ;
 		}
+
 	}
 </style>
 
 <section>
 	<div class="title" id="porfolio">
-		<h1>{title}</h1>
+		<h2>{title}</h2>
 	</div>
 	<div class="container">
 		{#each IMAGES as image (image.id)}
@@ -386,7 +405,7 @@
 									<i class="flaticon-diseno-web"/>
 									<p>Ver Proyecto</p>
 								</a>
-								<h2>{image.title}</h2>
+								<h3>{image.title}</h3>
 								<a href={image.showCode} target="_blank">
 									<i class="flaticon-programacion"/>
 									<p>Ver Código</p>

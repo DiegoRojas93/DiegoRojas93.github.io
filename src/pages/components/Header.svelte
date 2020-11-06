@@ -91,7 +91,7 @@
 					<li><a href="#certification">Certification</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#certification">Certification</a></li>
-					<li><a href="#porfolio">Porfolio</a></li>
+					<li><a href="#porfolio">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -109,7 +109,7 @@
 					<li><a href="#certification">Certification</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#certification">Certification</a></li>
-					<li><a href="#porfolio">Porfolio</a></li>
+					<li><a href="#porfolio">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
