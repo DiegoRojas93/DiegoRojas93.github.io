@@ -6,8 +6,8 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js',
-		publicPath: 'http://localhost:3001'
+		filename: 'bundle.js'
+		// publicPath: 'http://localhost:3001'
 	},
 	resolve: {
 		extensions: ['*', '.mjs', '.js', 'svelte']
