@@ -203,7 +203,7 @@
 		<article class="Hero__container-left">
 			<div class="Landing__image">
 			{#if visible}
-				<img src={landing} alt="Hero" transition:fly={{ x: -200, duration: 5000 }}/>
+				<img src='https://diegorojas.netlify.app/${landing}' alt="Hero" transition:fly={{ x: -200, duration: 5000 }}/>
 				{/if}
 			</div>
 		</article>
