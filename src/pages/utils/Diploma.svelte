@@ -1,6 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition'
-	let diploma = '../../public/images/certification/Diploma.webp';
+	let diploma = 'https://i.imgur.com/zYLdYEG.png';
 </script>
 
 <style>
