@@ -5,7 +5,7 @@
 	import MediaQuery from "../utils/MediaQuery.svelte";
 
 	let Hero = '../public/images/hero.svg';
-	let landing = '../public/images/Landing.webp';
+	let landing = 'https://i.imgur.com/QUeKAGU.png';
 
 	let title = '< Hello wordl! />'
 	let visible = false;

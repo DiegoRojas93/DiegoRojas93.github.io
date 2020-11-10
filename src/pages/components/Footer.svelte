@@ -1,10 +1,10 @@
 <script>
-	let src = '../../public/images/Foto2.webp';
-	let comilla1 = '../../public/images/Comillas1.svg';
-	let comilla2 = '../../public/images/Comillas2.svg';
-	let svelte = '../../public/images/logos/Svelte.png';
-	let webpack = '../../public/images/logos/Webpack.png';
-	let NPM = '../../public/images/logos/NPM.png';
+	let src = 'https://i.imgur.com/VMiH19e.png';
+	let comilla1 = 'https://i.imgur.com/Y841jVL.png';
+	let comilla2 = 'https://i.imgur.com/H0fdwgF.png';
+	let svelte = 'https://i.imgur.com/ffNbpfv.png';
+	let webpack = 'https://i.imgur.com/tMdmS5a.png';
+	let NPM = 'https://i.imgur.com/jT9dWFb.png';
 
 	let contactame = '</ Contactame >';
 </script>
@@ -223,6 +223,10 @@
 
 		.copyright{
 			justify-content: space-between;
+		}
+
+		.copyright p {
+			font-size: 1.6rem;
 		}
 
 		.copyright p + p{

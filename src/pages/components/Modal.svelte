@@ -41,7 +41,7 @@
 		});
 	}
 
-	let src = '../../public/images/Foto2.webp';
+	let src = 'https://i.imgur.com/VMiH19e.png';
 
 	const title = '</ contact >';
 </script>
@@ -204,7 +204,6 @@
 
 	figcaption p{
 		color: #302F3E;
-		/* font-size: 1rem; */
 	}
 
 	figcaption hr {

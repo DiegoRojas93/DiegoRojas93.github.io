@@ -4,8 +4,8 @@
 	import AbautMe from './components/AboutMe.svelte';
 	import Motivation from './components/Motivation.svelte';
 	import Certification from './components/Certification.svelte';
-	import Video from './components/Video.svelte';
-	import Portfolio from './components/Portfolio.svelte';
+	// import Video from './components/Video.svelte';
+	import Portfolio from './components/Portafolio.svelte';
 	import Footer from './components/Footer.svelte';
 
 	import MediaQuery from "./utils/MediaQuery.svelte";
@@ -98,10 +98,10 @@
 <AbautMe/>
 <Motivation/>
 <Certification/>
-<MediaQuery query="(min-width: 768px)" let:matches>
+<!-- <MediaQuery query="(min-width: 768px)" let:matches>
 	{#if matches}
 		<Video/>
 	{/if}
-</MediaQuery>
+</MediaQuery> -->
 <Portfolio/>
 <Footer/>

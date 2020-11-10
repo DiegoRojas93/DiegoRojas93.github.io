@@ -1,12 +1,11 @@
 <script>
-	let clip = '../../public/video/Video.mp4';
-	let gif = '../../public/images/Video.gif';
+	let gif = 'https://i.imgur.com/CvtUA5G.gif';
 	let motivation1 = '../../public/images/motivation1.webp';
 	let motivation2 = '../../public/images/motivation2.webp';
-	let Image = '../../public/images/Image.webp';
-	let Image1 = '../../public/images/Image-1.webp';
-	let Image2 = '../../public/images/Image-2.webp';
-	let Image3 = '../../public/images/Image-3.webp';
+	let Image = 'https://i.imgur.com/SVwcorY.png';
+	let Image1 = 'https://i.imgur.com/kJJwXfD.png';
+	let Image2 = 'https://i.imgur.com/L1L8Jxh.png';
+	let Image3 = 'https://i.imgur.com/1FQqTmk.png';
 </script>
 
 <style>

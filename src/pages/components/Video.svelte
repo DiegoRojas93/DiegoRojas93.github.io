@@ -1,5 +1,6 @@
 <script>
-	let video = '../../public/video/Video2.mp4';
+	// let video = '../../public/video/Video2.mp4';
+	let src = 'https://i.imgur.com/DkQPnAE.gifv';
 </script>
 
 <style>
@@ -14,8 +15,8 @@
 	}
 
 	section{
-		width: auto;
-		height: auto;
+		width: 100vw;
+		height: 100Vh;
 		position: relative;
 	}
 
@@ -24,9 +25,10 @@
 		height: 100%;
 		background-color: transparent;
 	}
-	video{
+
+	img{
 		width: 100%;
-		height: 100%;
+		height: auto;
 	}
 
 	.overlay{
@@ -71,11 +73,13 @@
 	}
 </style>
 
+		<img src={src} alt="gif">
 <section>
 	<article>
-		<video autoplay muted loop>
+		<!-- <video autoplay muted loop>
 			<source src={video} type="video/mp4" />
-		</video>
+		</video> -->
+		<img {src} alt='gif hexagon'/>
 		<div class="overlay">
 			<h1>Estoy ansioso de diseñar cosas increibles con codigo</h1>
 			<p>Puedes estar seguro que siempre pongo todo mi compromiso en lo que realizo para entregar el mejor proyecto posible.</p>

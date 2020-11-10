@@ -107,7 +107,7 @@
 		{id: 4, name: 'Postman', image: 'https://i.imgur.com/bgjnQ7O.png', show: true},
 	]
 
-	let lenguajes = '../../public/images/Lenguajes.webp';
+	let lenguajes = 'https://i.imgur.com/vN2Npla.png';
 
 
 	let item = document.querySelectorAll('.item');

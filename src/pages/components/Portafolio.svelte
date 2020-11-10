@@ -4,88 +4,60 @@
 	let IMAGES = [
 		{	id: 1,
 			title: 'Platzi Video',
-			mac: '../../public/images/Portfolio/Mac1.webp',
-			macbook: '../../public/images/Portfolio/macbook1.webp',
-			smartphone: '../../public/images/Portfolio/smartphone1.webp',
+			mac: 'https://i.imgur.com/bBsfWVO.png',
+			macbook: 'https://i.imgur.com/VbSbULG.png',
+			smartphone: 'https://i.imgur.com/tDtFMZF.png',
 			showWork: 'https://diegorojas93.github.io/Plazti_Video/',
 			showCode: 'https://github.com/DiegoRojas93/Plazti_Video'
 		},
 		{	id: 2,
 			title: '100tifi.co',
-			mac: '../../public/images/Portfolio/Mac2.webp',
-			macbook: '../../public/images/Portfolio/macbook2.webp',
-			smartphone: '../../public/images/Portfolio/smartphone2.webp',
+			mac: 'https://i.imgur.com/AD5q8uv.png',
+			macbook: 'https://i.imgur.com/8jmyQwB.png',
+			smartphone: 'https://i.imgur.com/Aye4u3C.png',
 			showWork: 'https://diegorojas93.github.io/SPA/',
 			showCode: 'https://github.com/DiegoRojas93/SPA'
 		},
 		{	id: 3,
 			title: 'Postcast',
-			mac: '../../public/images/Portfolio/Mac3.webp',
-			macbook: '../../public/images/Portfolio/macbook3.webp',
-			smartphone: '../../public/images/Portfolio/smartphone3.webp',
+			mac: 'https://i.imgur.com/HejJpT7.png',
+			macbook: 'https://i.imgur.com/DATisxf.png',
+			smartphone: 'https://i.imgur.com/2qEjm6k.png',
 			showWork: 'https://podcasts-de-platzi.vercel.app/',
 			showCode: 'https://github.com/DiegoRojas93/Podcasts_de_Platzi'
 		},
 		{	id: 4,
 			title: 'Simon Dice',
-			mac: '../../public/images/Portfolio/Mac4.webp',
-			macbook: '../../public/images/Portfolio/macbook4.webp',
-			smartphone: '../../public/images/Portfolio/smartphone4.webp',
+			mac: 'https://i.imgur.com/5B4wbQM.png',
+			macbook: 'https://i.imgur.com/i7aU38J.png',
+			smartphone: 'https://i.imgur.com/fkKmFOU.png',
 			showWork: 'https://diegorojas93.github.io/Simon_Dice/Index.html',
 			showCode: 'https://github.com/DiegoRojas93/Simon_Dice'
 		},
 		{	id: 5,
 			title: 'Platzi Conf',
-			mac: '../../public/images/Portfolio/Mac5.webp',
-			macbook: '../../public/images/Portfolio/macbook5.webp',
-			smartphone: '../../public/images/Portfolio/smartphone5.webp',
+			mac: 'https://i.imgur.com/FlNfXIj.png',
+			macbook: 'https://i.imgur.com/69Wypkj.png',
+			smartphone: 'https://i.imgur.com/EPEk2pN.png',
 			showWork: 'https://diegorojas93.github.io/Platzi-Talks-bootstrap/',
 			showCode: 'https://github.com/DiegoRojas93/Platzi-Talks-bootstrap'
 		},
 		{	id: 6,
 			title: 'Platzi Foot',
-			mac: '../../public/images/Portfolio/Mac6.webp',
-			macbook: '../../public/images/Portfolio/macbook6.webp',
-			smartphone: '../../public/images/Portfolio/smartphone6.webp',
+			mac: 'https://i.imgur.com/izSoexN.png',
+			macbook: 'https://i.imgur.com/z4Hxp5Y.png',
+			smartphone: 'https://i.imgur.com/EhVtU3X.png',
 			showWork: 'https://diegorojas93.github.io/PlatziFoot/public/home.html',
 			showCode: 'https://github.com/DiegoRojas93/PlatziFoot'
 		},
 	];
+
+	let diseño = 'https://i.imgur.com/PWTImiM.png';
+	let code = 'https://i.imgur.com/3DUaaWT.png';
+
 </script>
 
 <style>
-
-@font-face {
-  font-family: "Flaticon";
-  src: url("../../public/font/Flaticon.eot");
-  src: url("../../public/font/Flaticon.eot?#iefix") format("embedded-opentype"),
-       url("../../public/font/Flaticon.woff2") format("woff2"),
-       url("../../public/font/Flaticon.woff") format("woff"),
-       url("../../public/font/Flaticon.ttf") format("truetype"),
-       url("../../public/font/Flaticon.svg#Flaticon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: "Flaticon";
-    src: url("../../public/font/Flaticon.svg#Flaticon") format("svg");
-  }
-}
-
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-  font-family: Flaticon;
-  font-size: 4rem;
-	font-style: normal;
-	color: blueviolet;
-	width: 100%;
-	height: auto;
-}
-
-.flaticon-programacion:before { content: "\f100";}
-.flaticon-diseno-web:before { content: "\f101"; }
 
 	section{
 		box-sizing: border-box;
@@ -264,6 +236,7 @@
 		height: 30%;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		padding: 1rem 4rem;
 		visibility: hidden;
 		transition: 0.5s ease-in-out;
@@ -274,10 +247,12 @@
 	}
 
 	.icons a{
+		box-sizing: border-box;
 		margin: 0;
-		height: 100%;
-		width: 6rem;
-		max-width: 100px;
+		height: 90%;
+		width: 25%;
+		max-width: 25%;
+		padding: 1rem;
 		text-decoration: none;
 		display: flex;
 		flex-direction: column;
@@ -288,6 +263,11 @@
 		background: none;
 		box-shadow: none;
 		transition: 0.3s ease-in-out;
+	}
+
+	.icons a img{
+		width: auto;
+		height: 75%;
 	}
 
 	.icons a:hover{
@@ -301,12 +281,7 @@
 		box-shadow: inset 5px 5px 10px #060417, inset -5px -5px 10px #16105b;
 	}
 
-	.icons i{
-		width: auto;
-		height: auto;
-	}
-
-	.icons p {
+	.icons a p {
 		font-weight: 600;
 		font-size: 1rem;
 		color: blueviolet;
@@ -317,10 +292,6 @@
 		height: 100%;
 	}
 
-	.flaticon-diseno-web, .flaticon-programacion{
-		height: 100%;
-		width: auto;
-	}
 	.card:hover .mac{
 		transform: translate(0, 0rem);
 	}
@@ -339,6 +310,7 @@
 
 	@media screen and (min-width: 768px){
 		section{
+			/* max-height: 100vh; */
 			padding: 2rem;
 		}
 
@@ -353,6 +325,10 @@
 		h3{
 			margin-top: 2rem;
 			font-size: 1.872rem;
+		}
+
+		.icons a {
+			font-size: 1.6rem;
 		}
 
 		.icons p {
@@ -402,12 +378,12 @@
 							</div>
 							<section class="icons">
 								<a href={image.showWork} target="_blank">
-									<i class="flaticon-diseno-web"/>
+									<img src={diseño} alt="diseño"/>
 									<p>Ver Proyecto</p>
 								</a>
 								<h3>{image.title}</h3>
 								<a href={image.showCode} target="_blank">
-									<i class="flaticon-programacion"/>
+									<img src={code} alt="code"/>
 									<p>Ver Código</p>
 								</a>
 							</section>

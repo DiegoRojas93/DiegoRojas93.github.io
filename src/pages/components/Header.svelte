@@ -1,6 +1,6 @@
 <script>
-	let logoMobile = '../../public/images/Logo.webp';
-	let logoDesk = '../../public/images/LogoDesk.webp';
+	let logoMobile = 'https://i.imgur.com/EPVB8vn.png';
+	let logoDesk = 'https://i.imgur.com/aZpDsl4.png';
 
 	import MediaQuery from "../utils/MediaQuery.svelte";
 	import Burger from "./Burger_Button.svelte";
