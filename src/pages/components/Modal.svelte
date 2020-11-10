@@ -135,7 +135,7 @@
 
 	.modal {
 		box-sizing: border-box;
-		background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=#f1f1f1ff&noise=cdcdcd&density=100&opacity=75);
+		background-image: url(https://i.imgur.com/4FDLPLy.png);
 		position: fixed;
 		top: 0;
 		left: 0;

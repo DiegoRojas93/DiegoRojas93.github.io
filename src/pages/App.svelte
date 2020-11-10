@@ -30,7 +30,7 @@
 		height: 100vh;
 		margin: 0;
 		padding: 0;
-		background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=#f1f1f1ff&noise=cdcdcd&density=100&opacity=75);
+		background-image: url(https://i.imgur.com/4FDLPLy.png);
 		transition: background-color 0.3s;
 		box-sizing: border-box;
 		list-style: none;
