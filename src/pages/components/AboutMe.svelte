@@ -156,7 +156,6 @@
 			width: 80%;
 			height: 100%;
 			padding: 0;
-			background: green;
 		}
 
 		.container .text p{
