@@ -1,6 +1,6 @@
 <script>
 	let title = `< About Me />`;
-	let startup = '../../public/images/Startup.webp';
+	let startup = 'https://i.imgur.com/gtD9K4G.png';
 
 	import MediaQuery from '../utils/MediaQuery.svelte';
 </script>
